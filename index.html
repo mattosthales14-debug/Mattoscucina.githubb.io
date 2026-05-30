@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<link rel="icon" type="image/png" href="favicon.png">  
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0F0A04">  
 <meta name="google-site-verification" content="sMngTF3y76sJST8OdsPUQSVmtV6TInb5NY991bR7E9c" />  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,16 +21,52 @@
 <meta property="og:title" content="Mattos Cucina Italiana — Pães & Massas Artesanais em Mauá">
 <meta property="og:description" content="Pão de fermentação natural, focaccia, massas frescas e petiscos italianos feitos sob encomenda em Mauá e região.">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Mattos Cucina Italiana">
+<meta property="og:url" content="https://mattoscucina.com.br/">
+<meta property="og:image" content="https://mattoscucina.com.br/og-image.png">
+<meta property="og:image:secure_url" content="https://mattoscucina.com.br/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mattos Cucina Italiana — pães artesanais e massas frescas em Mauá">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mattos Cucina Italiana — Pães & Massas Artesanais em Mauá">
+<meta name="twitter:description" content="Pão de fermentação natural, focaccia, massas frescas e petiscos italianos feitos sob encomenda em Mauá e região do ABC.">
+<meta name="twitter:image" content="https://mattoscucina.com.br/og-image.png">
+<meta name="twitter:image:alt" content="Mattos Cucina Italiana — pães artesanais e massas frescas">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"FoodEstablishment",
+  "@type":["Bakery","FoodEstablishment"],
+  "@id":"https://mattoscucina.com.br/#business",
   "name":"Mattos Cucina Italiana",
   "description":"Pães artesanais de fermentação natural, focaccia, ciabatta, pane pugliese, grissini, taralli e massas frescas italianas feitas sob encomenda em Mauá e região.",
   "url":"https://mattoscucina.com.br",
+  "image":"https://mattoscucina.com.br/og-image.png",
+  "logo":"https://mattoscucina.com.br/icon-512.png",
   "telephone":"+5511995108337",
   "servesCuisine":"Italian",
-  "areaServed":{"@type":"City","name":"Mauá","containedInPlace":{"@type":"State","name":"São Paulo"}},
+  "sameAs":["https://instagram.com/mattoscucina","https://wa.me/5511995108337"],
+  "address":{"@type":"PostalAddress","addressLocality":"Mauá","addressRegion":"SP","addressCountry":"BR"},
+  "areaServed":[
+    {"@type":"City","name":"Mauá"},
+    {"@type":"City","name":"Santo André"},
+    {"@type":"City","name":"São Bernardo do Campo"},
+    {"@type":"City","name":"São Caetano do Sul"},
+    {"@type":"City","name":"Diadema"},
+    {"@type":"City","name":"Ribeirão Pires"},
+    {"@type":"City","name":"Rio Grande da Serra"}
+  ],
+  "currenciesAccepted":"BRL",
+  "paymentAccepted":"Pix, Dinheiro, Cartão",
+  "acceptsReservations":"True",
+  "potentialAction":{"@type":"OrderAction","target":"https://wa.me/5511995108337"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5","bestRating":"5","reviewCount":"3"},
+  "review":[
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Ana Paula R."},"reviewBody":"O pão de fermentação natural é o melhor que já comi fora da Itália."},
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Rodrigo M."},"reviewBody":"Encomendei a focaccia para um jantar e foi o comentário da noite."},
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Carla B."},"reviewBody":"O tagliatelle fresco é de chorar. Melhor do que qualquer restaurante."}
+  ],
   "priceRange":"$$",
   "hasMenu":{
     "@type":"Menu",
@@ -47,6 +87,20 @@
       ]}
     ]
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Como faço para encomendar na Mattos Cucina Italiana?","acceptedAnswer":{"@type":"Answer","text":"É só chamar no WhatsApp (11) 99510-8337 com no mínimo 48 horas de antecedência. Você escolhe os produtos, quantidades e a data, e confirmamos tudo na hora."}},
+    {"@type":"Question","name":"Para quais cidades vocês entregam?","acceptedAnswer":{"@type":"Answer","text":"Atendemos Mauá e toda a região do Grande ABC: Santo André, São Bernardo do Campo, São Caetano do Sul, Diadema, Ribeirão Pires e Rio Grande da Serra. A entrega ou retirada é combinada pelo WhatsApp."}},
+    {"@type":"Question","name":"Qual é a antecedência mínima para o pedido?","acceptedAnswer":{"@type":"Answer","text":"48 horas. Cada produto é feito do zero no momento do pedido — o pão fermenta, a massa descansa e os petiscos são assados no tempo certo."}},
+    {"@type":"Question","name":"Quanto custa o pão de fermentação natural?","acceptedAnswer":{"@type":"Answer","text":"O pão de fermentação natural custa R$ 28,99 a unidade, com 28 horas de fermentação lenta."}},
+    {"@type":"Question","name":"Os produtos têm conservantes?","acceptedAnswer":{"@type":"Answer","text":"Não. Tudo é 100% artesanal, sem conservantes — apenas farinha, tempo e técnica."}},
+    {"@type":"Question","name":"Quais são as formas de pagamento?","acceptedAnswer":{"@type":"Answer","text":"Aceitamos Pix, dinheiro e cartão."}}
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -522,6 +576,33 @@ footer{background:var(--ink);padding:2.5rem 1.5rem 1.5rem}
   nav.stuck{padding:.6rem 1rem}
   .nav-brand-svg{width:30px;height:30px}
 }
+
+/* ─ NAV INSTAGRAM ─ */
+.nav-actions{display:flex;align-items:center;gap:.6rem}
+.nav-ig{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(15,10,4,.18);transition:background .25s,border-color .25s,transform .2s}
+.nav-ig:hover{background:var(--terr);border-color:var(--terr);transform:translateY(-1px)}
+.nav-ig svg{width:20px;height:20px;fill:var(--ink);transition:fill .25s}
+.nav-ig:hover svg{fill:#fff}
+@media(max-width:560px){.nav-ig{display:none}}
+
+/* ─ FAQ ─ */
+.faq{padding:5.5rem 1.5rem;background:var(--cream)}
+.faq-inner{max-width:800px;margin:0 auto}
+.faq-head{text-align:center;margin-bottom:2.5rem}
+.faq-item{border-bottom:1px solid rgba(15,10,4,.12)}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.35rem .2rem;font-family:'Playfair Display',serif;font-size:1.18rem;font-weight:700;color:var(--ink)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-family:'Jost',sans-serif;font-size:1.6rem;font-weight:300;color:var(--terr);transition:transform .3s;line-height:1}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-a{padding:0 .2rem 1.35rem;color:#4A3A28;font-size:1.02rem;line-height:1.6;max-width:680px}
+
+/* ─ SHARE ─ */
+.share-row{margin-top:1.6rem;display:flex;justify-content:center}
+.btn-share{display:inline-flex;align-items:center;gap:.5rem;background:transparent;border:1.5px solid rgba(255,253,248,.45);color:#FFFDF8;padding:.7rem 1.4rem;border-radius:999px;font-family:'Jost',sans-serif;font-size:.95rem;font-weight:500;letter-spacing:.03em;cursor:pointer;transition:background .25s,border-color .25s}
+.btn-share:hover{background:rgba(255,253,248,.12);border-color:#FFFDF8}
+.btn-share svg{width:18px;height:18px;fill:currentColor}
+.share-toast{position:fixed;left:50%;bottom:5.5rem;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#FFFDF8;padding:.7rem 1.3rem;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:9999;box-shadow:0 8px 30px rgba(15,10,4,.3)}
+.share-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
 </head>
 <body>
@@ -557,10 +638,15 @@ footer{background:var(--ink);padding:2.5rem 1.5rem 1.5rem}
       <span class="nav-brand-sub">Cucina Italiana</span>
     </div>
   </a>
+  <div class="nav-actions">
+  <a class="nav-ig" href="https://instagram.com/mattoscucina" target="_blank" rel="noopener" aria-label="Instagram da Mattos Cucina Italiana">
+    <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.86s0 3.6-.07 4.86c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.86.07s-3.6 0-4.86-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.86c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5.01-4.74.07-.9.04-1.38.19-1.7.32-.43.16-.74.36-1.06.68-.32.32-.52.63-.68 1.06-.13.32-.28.8-.32 1.7C3.21 8.5 3.2 8.85 3.2 12s.01 3.5.07 4.74c.04.9.19 1.38.32 1.7.16.43.36.74.68 1.06.32.32.63.52 1.06.68.32.13.8.28 1.7.32 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.9-.04 1.38-.19 1.7-.32.43-.16.74-.36 1.06-.68.32-.32.52-.63.68-1.06.13-.32.28-.8.32-1.7.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.9-.19-1.38-.32-1.7a2.85 2.85 0 00-.68-1.06 2.85 2.85 0 00-1.06-.68c-.32-.13-.8-.28-1.7-.32C15.5 4.01 15.15 4 12 4zm0 3.06A4.94 4.94 0 1116.94 12 4.94 4.94 0 0112 7.06zm0 8.14A3.2 3.2 0 1015.2 12 3.2 3.2 0 0012 15.2zm5.14-8.34a1.15 1.15 0 11-1.15-1.15 1.15 1.15 0 011.15 1.15z"/></svg>
+  </a>
   <a class="nav-wa" href="https://wa.me/5511995108337?text=Olá! Quero encomendar." target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     Encomendar
   </a>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -1009,6 +1095,46 @@ footer{background:var(--ink);padding:2.5rem 1.5rem 1.5rem}
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       Encomendar agora — (11) 99510-8337
     </a>
+    <div class="share-row">
+      <button class="btn-share" type="button" onclick="compartilhar()" aria-label="Compartilhar a Mattos Cucina Italiana">
+        <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
+        Compartilhar com amigos
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="faq-head rv">
+      <span class="eyebrow">Perguntas Frequentes</span>
+      <h2 class="sec-title">Tudo o que você<br><em>precisa saber</em></h2>
+    </div>
+    <details class="faq-item rv">
+      <summary>Como faço para encomendar?</summary>
+      <div class="faq-a">É só chamar no WhatsApp <strong>(11) 99510-8337</strong> com no mínimo 48 horas de antecedência. Você escolhe os produtos, quantidades e a data, e confirmamos tudo na hora.</div>
+    </details>
+    <details class="faq-item rv">
+      <summary>Para quais cidades vocês entregam?</summary>
+      <div class="faq-a">Atendemos Mauá e toda a região do Grande ABC: Santo André, São Bernardo do Campo, São Caetano do Sul, Diadema, Ribeirão Pires e Rio Grande da Serra. A entrega ou retirada é combinada pelo WhatsApp.</div>
+    </details>
+    <details class="faq-item rv">
+      <summary>Qual é a antecedência mínima do pedido?</summary>
+      <div class="faq-a">48 horas. Cada produto é feito do zero no momento do pedido — o pão fermenta, a massa descansa e os petiscos são assados no tempo certo, para chegar fresco até você.</div>
+    </details>
+    <details class="faq-item rv">
+      <summary>Quanto custa o pão de fermentação natural?</summary>
+      <div class="faq-a">O pão de fermentação natural custa <strong>R$ 28,99</strong> a unidade, com 28 horas de fermentação lenta, casca crocante e miolo aberto.</div>
+    </details>
+    <details class="faq-item rv">
+      <summary>Os produtos têm conservantes?</summary>
+      <div class="faq-a">Não. Tudo é 100% artesanal, sem conservantes — apenas farinha, tempo e técnica.</div>
+    </details>
+    <details class="faq-item rv">
+      <summary>Quais são as formas de pagamento?</summary>
+      <div class="faq-a">Aceitamos Pix, dinheiro e cartão. Combinamos os detalhes pelo WhatsApp ao confirmar a encomenda.</div>
+    </details>
   </div>
 </section>
 
@@ -1033,11 +1159,11 @@ footer{background:var(--ink);padding:2.5rem 1.5rem 1.5rem}
       <h3>Faça sua Encomenda</h3>
       <p>Preencha e vamos confirmar tudo pelo WhatsApp.</p>
       <div class="frow">
-        <div class="ffield"><label>Nome</label><input type="text" placeholder="Seu nome"></div>
-        <div class="ffield"><label>WhatsApp</label><input type="tel" placeholder="(11) 9 0000-0000"></div>
+        <div class="ffield"><label for="f-nome">Nome</label><input id="f-nome" type="text" placeholder="Seu nome"></div>
+        <div class="ffield"><label for="f-wpp">WhatsApp</label><input id="f-wpp" type="tel" placeholder="(11) 9 0000-0000"></div>
       </div>
-      <div class="ffield"><label>Produto</label>
-        <select>
+      <div class="ffield"><label for="f-prod">Produto</label>
+        <select id="f-prod">
           <option value="">Selecione...</option>
           <option>Pão de Fermentação Natural — R$ 28,99</option>
           <option>Focaccia com Alecrim e Tomate Cereja</option>
@@ -1050,8 +1176,8 @@ footer{background:var(--ink);padding:2.5rem 1.5rem 1.5rem}
           <option>Vários produtos</option>
         </select>
       </div>
-      <div class="ffield"><label>Mensagem</label><textarea placeholder="Quantidade, data desejada, cidade, ocasião..."></textarea></div>
-      <button class="fsub" onclick="window.open('https://wa.me/5511995108337?text=Olá! Quero fazer uma encomenda na Mattos Cucina Italiana.','_blank')">
+      <div class="ffield"><label for="f-msg">Mensagem</label><textarea id="f-msg" placeholder="Quantidade, data desejada, cidade, ocasião..."></textarea></div>
+      <button class="fsub" type="button" onclick="enviarPedido()">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Enviar pelo WhatsApp
       </button>
@@ -1136,6 +1262,34 @@ const io=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}});
 },{threshold:.08,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// Order form -> personalized WhatsApp message
+function enviarPedido(){
+  const v=id=>{const el=document.getElementById(id);return el?el.value.trim():'';};
+  const nome=v('f-nome'),wpp=v('f-wpp'),prod=v('f-prod'),msg=v('f-msg');
+  let t='Olá! Quero fazer uma encomenda na Mattos Cucina Italiana.';
+  if(nome) t+='\n\nNome: '+nome;
+  if(wpp) t+='\nWhatsApp: '+wpp;
+  if(prod) t+='\nProduto: '+prod;
+  if(msg) t+='\nDetalhes: '+msg;
+  window.open('https://wa.me/5511995108337?text='+encodeURIComponent(t),'_blank','noopener');
+}
+
+// Native share with clipboard fallback
+function compartilhar(){
+  const url='https://mattoscucina.com.br/';
+  const data={title:'Mattos Cucina Italiana',text:'Pães artesanais de fermentação natural e massas frescas em Mauá e região do ABC.',url:url};
+  if(navigator.share){navigator.share(data).catch(()=>{});return;}
+  const done=()=>toast('Link copiado! É só colar e enviar.');
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(done).catch(()=>toast(url));}
+  else{toast(url);}
+}
+function toast(m){
+  let el=document.getElementById('shareToast');
+  if(!el){el=document.createElement('div');el.id='shareToast';el.className='share-toast';document.body.appendChild(el);}
+  el.textContent=m;el.classList.add('show');
+  clearTimeout(window.__st);window.__st=setTimeout(()=>el.classList.remove('show'),3000);
+}
 </script>
 </body>
 </html>
